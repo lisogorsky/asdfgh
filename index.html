@@ -112,54 +112,54 @@
 						<div class="col-md-4 col-sm-6 steps new"><div class="steps-number">13</div>27.12.2016 - прошла медицинскую комиссию. Присвоена первая группа инвалидности сроком на 2 года.<br>Недрубоспособна<br>(<a href="/foto/2017_2.jpg" target="_blank">документ прилагается</a>)</div>
 						<div class="col-md-4 col-sm-6 steps new"><div class="steps-number">14</div>11.01.2017 - в местном онкоцентре проведено обследование КТ брюшной полости. Рост метастаз остановлен, опухоль в размерах уменьшилась.<br><u>Есть показание к операции.</u><br>(<a href="/foto/2017_1.jpg" target="_blank">документ прилагается</a>)</div>
 						<div class="col-md-4 col-sm-6 steps new"><div class="steps-number">15</div>На данный момент я стабильно нахожусь под наблюдением докторов из МНИОИ им. П.А. Герцена (г. Москва) и планирую пройти дополнительно три курса химиотерапии в онкоцентре г. Екатеринбурга.
-</div> 
-					</div>
+					</div> 
 				</div>
 			</div>
-		</section><hr>
-		<section id="s3">
-			<div class="container">
-				<h2>Мои документы</h2>
-				<div class="row">
-					<div class="col-md-2 col-sm-4 col-xs-6 doc">
-						<a href='doc/1.jpg'
-						class='lightview'
-						data-lightview-group='doc'
-						data-lightview-title="Выписной эпикриз">
-						<img src='doc/thumbnails/1.jpg' alt=''/>
-					</a>
-				</div>										
+		</div>
+	</section><hr>
+	<section id="s3">
+		<div class="container">
+			<h2>Мои документы</h2>
+			<div class="row">
 				<div class="col-md-2 col-sm-4 col-xs-6 doc">
-					<a href='doc/3.jpg'
+					<a href='doc/1.jpg'
 					class='lightview'
 					data-lightview-group='doc'
-					data-lightview-title="Выписка из медицинской карты">
-					<img src='doc/thumbnails/3.jpg' alt=''/>
+					data-lightview-title="Выписной эпикриз">
+					<img src='doc/thumbnails/1.jpg' alt=''/>
 				</a>
-			</div>	
+			</div>										
 			<div class="col-md-2 col-sm-4 col-xs-6 doc">
-				<a href='doc/2.jpg'
+				<a href='doc/3.jpg'
 				class='lightview'
 				data-lightview-group='doc'
-				data-lightview-title="лист 2">
-				<img src='doc/thumbnails/2.jpg' alt=''/>
+				data-lightview-title="Выписка из медицинской карты">
+				<img src='doc/thumbnails/3.jpg' alt=''/>
 			</a>
 		</div>	
 		<div class="col-md-2 col-sm-4 col-xs-6 doc">
-			<a href='doc/4.jpg'
+			<a href='doc/2.jpg'
 			class='lightview'
 			data-lightview-group='doc'
-			data-lightview-title="Эндоскопия">
-			<img src='doc/thumbnails/4.jpg' alt=''/>
+			data-lightview-title="лист 2">
+			<img src='doc/thumbnails/2.jpg' alt=''/>
 		</a>
-	</div>						
+	</div>	
 	<div class="col-md-2 col-sm-4 col-xs-6 doc">
-		<a href='doc/5.jpg'
+		<a href='doc/4.jpg'
 		class='lightview'
 		data-lightview-group='doc'
-		data-lightview-title="Результаты исследования">
-		<img src='doc/thumbnails/5.jpg' alt=''/>
+		data-lightview-title="Эндоскопия">
+		<img src='doc/thumbnails/4.jpg' alt=''/>
 	</a>
+</div>						
+<div class="col-md-2 col-sm-4 col-xs-6 doc">
+	<a href='doc/5.jpg'
+	class='lightview'
+	data-lightview-group='doc'
+	data-lightview-title="Результаты исследования">
+	<img src='doc/thumbnails/5.jpg' alt=''/>
+</a>
 </div>					
 <div class="col-md-2 col-sm-4 col-xs-6 doc">
 	<a href='doc/6.jpg'
@@ -450,7 +450,26 @@
 		<div class="development hidden-xs hidden-sm hidden-md">
 			<span class="glyphicon glyphicon-cog" aria-hidden="true"></span><a class="footerLink" target="_blank" href="mailto:webmaster@asdfgh.ru?subject=Вопрос по сайту">письмо разработчику сайта</a>
 		</div>
-		<div class="container-fluid">апрель 2017 </div>
+		<div class="container-fluid">
+			<script>
+				var month = new Date().getMonth();
+				switch (month) {
+					case 0 :  {month = "январь"}; break;
+					case 1 :  {month = "февраль"}; break;
+					case 2 :  {month = "март"}; break;
+					case 3 :  {month = "апрель"}; break;
+					case 4 :  {month = "май"}; break;
+					case 5 :  {month = "июнь"}; break;
+					case 6 :  {month = "июль"}; break;
+					case 7 :  {month = "август"}; break;
+					case 8 :  {month = "сентябрь"}; break;
+					case 9 :  {month = "октябрь"}; break;
+					case 10 : {month = "ноябрь"}; break;
+					case 11 : {month = "декабрь"}; break;
+				}
+				document.write(month + " " + new Date().getFullYear());
+			</script>
+		</div>
 	</footer>	
 	<!-- <div class="congratulations visible-xs text-center"> 
 		<a href="https://youtu.be/oZfp8Gvtt8s" target="_blank">Видео-поздравление Наташе от близких людей к дню рождения 11 декабря</a>
