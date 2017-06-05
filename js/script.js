@@ -4,9 +4,9 @@ $(document).ready(function() {
 		$('#thanks').remove();
 	});
 	
-	(function summTotal() {
-		var arr = ($('.sum_money').clone()).text();
-		var substr = arr.split("руб.");
+	function total(class, split, id) {
+		var arr = ($(class).clone()).text();
+		var substr = arr.split(split);
 		substr.pop();
 		var sum = 0;
 		for (var i=0; i<substr.length; i++) {
@@ -17,40 +17,12 @@ $(document).ready(function() {
 		var sum3 = sum2.split('');
 		sum3.splice(-3,0," ");
 		sum3.splice(-7,0," ");
-		$('#summTotal').html(sum3);
-	})();
-	
-	(function quantityTotal() {
-		var arr = ($('.quantity').clone()).text();
-		var substr = arr.split(".");
-		substr.pop();
-		var sum = 0;
-		for (var i=0; i<substr.length; i++) {
-			var rub = parseInt(substr[i].replace(" ", ""));
-			sum = sum + rub;
-		}
-		var sum2 = String(sum);
-		var sum3 = sum2.split('');
-		sum3.splice(-3,0," ");
-		sum3.splice(-7,0," ");
-		$('#quantityTotal').html(sum3);
-	})();
-	
-	(function peopleTotal() {
-		var arr = ($('.people').clone()).text();
-		var substr = arr.split("чел.");
-		substr.pop();
-		var sum = 0;
-		for (var i=0; i<substr.length; i++) {
-			var rub = parseInt(substr[i].replace(" ", ""));
-			sum = sum + rub;
-		}
-		var sum2 = String(sum);
-		var sum3 = sum2.split('');
-		sum3.splice(-3,0," ");
-		sum3.splice(-7,0," ");
-		$('#peopleTotal').html(sum3);
-	})();
+		$(id).html(sum3);
+	}
+
+	total('.sum_money', 'руб.', '#summTotal');
+	total('.quantity', '.', '#quantityTotal');
+	total('.people', 'чел.', '#peopleTotal');
 	
 	// блок с поздравлениями начало
 	// if ( $(window).width() > 767 ) {
