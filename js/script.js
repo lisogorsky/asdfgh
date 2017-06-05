@@ -4,9 +4,9 @@ $(document).ready(function() {
 		$('#thanks').remove();
 	});
 	
-	function total(class, split, id) {
-		var arr = ($(class).clone()).text();
-		var substr = arr.split(split);
+	function total(myclass, mysplit, myid) {
+		var arr = ($(myclass).clone()).text();
+		var substr = arr.split(mysplit);
 		substr.pop();
 		var sum = 0;
 		for (var i=0; i<substr.length; i++) {
@@ -17,7 +17,7 @@ $(document).ready(function() {
 		var sum3 = sum2.split('');
 		sum3.splice(-3,0," ");
 		sum3.splice(-7,0," ");
-		$(id).html(sum3);
+		$(myid).html(sum3);
 	}
 
 	total('.sum_money', 'руб.', '#summTotal');
